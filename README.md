@@ -2,9 +2,9 @@
 
 This script will:
 
- 1. download the `Debian 7.4 "Wheezy"` server, 64bit iso
- 2. ... do some magic to turn it into a vagrant box file
- 3. output `debian-wheezy-64.box`
+ 1. download the `Debian 6.0.9 "Squeeze"` server, 64bit iso
+ 2. ... do some magic to turn it into a vagrant box file preconfigured for [Thecus](http://www.thecus.com/) module development
+ 3. output `debian-wheezy-64-thecusdev.box`
 
 ## Requirements
 
@@ -22,9 +22,9 @@ This should do everything you need. If you don't have `mkisofs` or `p7zip`, inst
     brew install cdrtools
     brew install p7zip
 
-To add `debian-wheezy-64.box` with name `debian-wheezy` into vagrant:
+To add `debian-squeeze-64-thecusdev.box` with name `debian-squeeze-thecusdev` into vagrant:
 
-    vagrant box add "debian-wheezy" debian-wheezy-64.box
+    vagrant box add "debian-squeeze-thecusdev" debian-squeeze-64-thecusdev.box
 
 ## Usage on Linux
 
@@ -35,9 +35,9 @@ This should do everything you need. If you don't have `mkisofs` or `p7zip`:
     sudo apt-get install genisoimage
     sudo apt-get install p7zip-full
 
-To add `debian-wheezy-64.box` with name `debian-wheezy` into vagrant:
+To add `debian-squeeze-64-thecusdev.box` with name `debian-squeeze-thecusdev` into vagrant:
 
-    vagrant box add "debian-wheezy" debian-wheezy-64.box
+    vagrant box add "debian-squeeze-thecusdev" debian-squeeze-64-thecusdev.box
 
 ## Usage on Windows (under cygwin/git shell)
 
@@ -50,9 +50,9 @@ Tested under Windows 7 with this tools:
  * [7zip](http://www.7-zip.org/)
  * [mkisofs](http://sourceforge.net/projects/cdrtoolswin/)
 
-To add `debian-wheezy-64.box` with name `debian-wheezy` into vagrant:
+To add `debian-squeeze-64-thecusdev.box` with name `debian-squeeze-thecusdev` into vagrant:
 
-    vagrant box add "debian-wheezy" debian-wheezy-64.box
+    vagrant box add "debian-squeeze-thecusdev" debian-squeeze-64-thecusdev.box
 
 ## Environment variables
 

@@ -21,9 +21,9 @@ set -o errexit
 #set -o xtrace
 
 # Configurations
-BOX="debian-wheezy-64"
-ISO_URL="http://cdimage.debian.org/debian-cd/7.4.0/amd64/iso-cd/debian-7.4.0-amd64-netinst.iso"
-ISO_MD5="e7e9433973f082a297793c3c5010b2c5"
+BOX="debian-squeeze-64-thecusdev"
+ISO_URL="http://cdimage.debian.org/cdimage/archive/6.0.9/amd64/iso-cd/debian-6.0.9-amd64-netinst.iso"
+ISO_MD5="9b08117cc235f3084948ab75a0f48861"
 
 # location, location, location
 FOLDER_BASE=`pwd`
