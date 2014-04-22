@@ -3,8 +3,8 @@
 This script will:
 
  1. download the `Debian 7.4 "Wheezy"` server, 64bit iso
- 2. ... do some magic to turn it into a vagrant box file
- 3. output `debian-wheezy-64.box`
+  2. ... do some magic to turn it into a vagrant box file preconfigured for use with [SynoCommunity's spksrc](https://github.com/SynoCommunity/spksrc)
+ 3. output `debian-wheezy-64-spksrc.box`
 
 ## Requirements
 
@@ -22,9 +22,9 @@ This should do everything you need. If you don't have `mkisofs` or `p7zip`, inst
     brew install cdrtools
     brew install p7zip
 
-To add `debian-wheezy-64.box` with name `debian-wheezy` into vagrant:
+To add `debian-wheezy-64-spksrc.box` with name `debian-wheezy-spksrc` into vagrant:
 
-    vagrant box add "debian-wheezy" debian-wheezy-64.box
+    vagrant box add "debian-wheezy-spksrc" debian-wheezy-64-spksrc.box
 
 ## Usage on Linux
 
@@ -37,7 +37,7 @@ This should do everything you need. If you don't have `mkisofs` or `p7zip`:
 
 To add `debian-wheezy-64.box` with name `debian-wheezy` into vagrant:
 
-    vagrant box add "debian-wheezy" debian-wheezy-64.box
+    vagrant box add "debian-wheezy-spksrc" debian-wheezy-64-spksrc.box
 
 ## Usage on Windows (under cygwin/git shell)
 
@@ -50,9 +50,9 @@ Tested under Windows 7 with this tools:
  * [7zip](http://www.7-zip.org/)
  * [mkisofs](http://sourceforge.net/projects/cdrtoolswin/)
 
-To add `debian-wheezy-64.box` with name `debian-wheezy` into vagrant:
+To add `debian-wheezy-64-spksrc.box` with name `debian-wheezy-spksrc` into vagrant:
 
-    vagrant box add "debian-wheezy" debian-wheezy-64.box
+    vagrant box add "debian-wheezy-spksrc" debian-wheezy-64-spksrc.box
 
 ## Environment variables
 

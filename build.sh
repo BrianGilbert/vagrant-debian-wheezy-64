@@ -21,7 +21,7 @@ set -o errexit
 #set -o xtrace
 
 # Configurations
-BOX="debian-wheezy-64"
+BOX="debian-wheezy-64-spksrc"
 ISO_URL="http://cdimage.debian.org/debian-cd/7.4.0/amd64/iso-cd/debian-7.4.0-amd64-netinst.iso"
 ISO_MD5="e7e9433973f082a297793c3c5010b2c5"
 
